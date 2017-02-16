@@ -1,0 +1,12 @@
+<div>
+  <button @click="add_user">Add</button>
+  <table style="width: 500px; border: 1px solid black;">
+    <tbody v-for="u in users">
+    <tr>
+      <td>
+        {{u.username}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
