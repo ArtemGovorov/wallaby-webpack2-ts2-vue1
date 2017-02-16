@@ -10,7 +10,7 @@ c) Webpack's loaders do not seem to be working with this demo:
  - unable to resolve `.hbs` files 
  - unable to parse `.hbs` files
 
-NOTE the `('production)` at the end of this line in `wallaby.js`:
+NOTE the `()` at the end of this line in `wallaby.js`:
 ```es6
 const webpackConfig = require('./webpack.config')();
 ```
