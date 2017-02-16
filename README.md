@@ -1,6 +1,6 @@
 Demo showing use of WallabyJS + Webpack 2 + Typsecript 2 + Vue 1
 
-Current not working!
+Currently not working!
 
 a) Webpack 2 allows es6 but Wallaby defaults to Node 4
 
@@ -10,7 +10,7 @@ c) Webpack's loaders do not seem to be working with this demo:
  - unable to resolve `.hbs` files 
  - unable to parse `.hbs` files
 
-NOTE the `('produciton)` at the end of this line in `wallaby.js`:
+NOTE the `('production)` at the end of this line in `wallaby.js`:
 ```es6
 const webpackConfig = require('./webpack.config')();
 ```
