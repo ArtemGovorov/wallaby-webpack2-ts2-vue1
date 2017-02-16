@@ -10,10 +10,7 @@ pids
 *.seed
 *.pid.lock
 lib-cov
-coverage
-.nyc_output
 .npm
 .eslintcache
-.yarn-integrity
 .env
 dist/
