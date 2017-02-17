@@ -16,7 +16,8 @@ module.exports = function (wallaby) {
   return {
     files: [
       {pattern: 'tsconfig.json', load: false},
-      {pattern: 'src/**/*.ts', load: false}
+      {pattern: 'src/**/*.ts', load: false},
+      {pattern: 'src/**/*.hbs', load: false},
     ],
 
     env: {
