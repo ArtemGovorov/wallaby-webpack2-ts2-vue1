@@ -3,8 +3,12 @@ const webpackConfig = require('./webpack.config')();
 
 console.log({webpackConfig})
 
+// http://wallabyjs.com/app/#/tests
+
 module.exports = function (wallaby) {
   console.log({wallaby})
+  webpackConfig.resolve.extensions = ['.js', '.hbs', '.vue'];
+  console.log(webpackConfig.resolve.extensions)
   const wallabyPostprocessor = wallabyWebpack(webpackConfig);
   return {
     files: [

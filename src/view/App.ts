@@ -2,10 +2,9 @@ import { VueComponent } from "vue-typescript"
 import { store, add_user } from "../model/store"
 
 @VueComponent({
-  template: require('./App.hbs'),
-  
+  //template: require('/Users/davem/Documents/testing/wallaby/wallaby-webpack2-ts2-vue1/src/view/App.hbs')
+  template: require('./App.hbs')
 })
-
 export class App extends Vue{
   
   count = 0

@@ -1,14 +1,26 @@
 Demo showing use of WallabyJS + Webpack 2 + Typsecript 2 + Vue 1
 
-Currently not working!
+Status:
+
+Works as long as you have absolute paths to templates!!
+
+Currently throws this error:
+
+```
+Error: Cannot find module "/./App.hbs"
+at undefined:66
+
+Module not found: Error: Can't resolve '/./App.hbs' in './src/view'Error
+```
+
+Notes:
 
 a) Webpack 2 allows es6 but Wallaby defaults to Node 4
+  - therefore change the defaule Wallabyjs node version
 
-b) Webpack 2 does not allow adding arbitrary property to webpack.config
+b) Webpack 2 does not allow adding arbitrary property to webpack.config, so adding `ts` won't work.
 
-c) Webpack's loaders do not seem to be working with this demo:
- - unable to resolve `.hbs` files 
- - unable to parse `.hbs` files
+c) Webpack 2 allows passing an `env` variable, in which case you're exporting a function so `wallaby.js` needs to call that function:
 
 NOTE the `()` at the end of this line in `wallaby.js`:
 ```es6

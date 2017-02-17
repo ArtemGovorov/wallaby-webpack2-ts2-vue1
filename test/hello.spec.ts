@@ -1,19 +1,26 @@
 
 import { store, add_user } from "../src/model/store"
 import { App } from "../src/view/App"
-describe('test one', () =>{
-  it("test a", () =>{
-    expect(1 + 1).toEqual(2)
-  })
+
+
+describe("simple test", () => {
+  it("should be true", function() {
+    expect(true).toBe(true);
+  });
 })
 
-describe('Hello.vue not using vue-test', () =>{
+
+describe('Testing vue component written in ts referencing hbs template.', () =>{
   add_user(store, {username: 'fred'})
-  expect(store.state.users.length).toEqual(3)
   
-  it('store mutation should result in correct component data', () =>{
+  it("test length", () => {
+    expect(store.state.users.length).toEqual(3)
+  })
+  
+
+  it('should result in correct component data', () =>{
     const vm = new Vue({
-      template  : '<hello v-ref:component></hello>',
+      template  : '<app v-ref:component></app>',
       components: {App}
     }).$mount()
     
@@ -24,7 +31,9 @@ describe('Hello.vue not using vue-test', () =>{
       {username:'fred'}
       ])
   })
+
 })
+
 
 /*
 describe('mutate store via action', () =>{
