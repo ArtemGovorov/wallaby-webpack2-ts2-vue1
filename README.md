@@ -1,4 +1,6 @@
 Demo showing use of WallabyJS + Webpack 2 + Typsecript 2 + Vue 1
+for issue:
+https://github.com/wallabyjs/public/issues/1018
 
 Status:
 
