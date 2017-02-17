@@ -7,9 +7,12 @@ console.log({webpackConfig})
 
 module.exports = function (wallaby) {
   console.log({wallaby})
+  
   webpackConfig.resolve.extensions = ['.js', '.hbs', '.vue'];
   console.log(webpackConfig.resolve.extensions)
+  
   const wallabyPostprocessor = wallabyWebpack(webpackConfig);
+  
   return {
     files: [
       {pattern: 'tsconfig.json', load: false},

@@ -17,7 +17,7 @@ module.exports = function (env = {}) {
 
   return {
     target: 'web',
-    devtool: isProduction ? 'eval' : 'cheap-eval-source-map',
+    devtool: isProduction ?  'source-map': 'cheap-module-source-map',
     context: __dirname,
     entry: {
       main: './src/main.ts'
